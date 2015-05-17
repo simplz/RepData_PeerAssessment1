@@ -76,7 +76,9 @@ img {
 <p>Throughout this report when writing code chunks in the R markdown document, always use echo = TRUE so that someone else will be able to read the code.</p>
 <p>First, we set echo equal a TRUE and results equal a ‘hold’ as global options for this document.</p>
 <pre class="r"><code>library(knitr)
-opts_chunk$set(echo = TRUE, results = 'hold')</code></pre>
+require(markdown) ## require(markdown) to create md file</code></pre>
+<pre><code>## Loading required package: markdown</code></pre>
+<pre class="r"><code>opts_chunk$set(echo = TRUE, results = 'hold')</code></pre>
 <div id="load-the-required-libraries" class="section level3">
 <h3>Load the required libraries</h3>
 <pre class="r"><code>library(data.table)
